@@ -13,8 +13,7 @@ jobs:
     - name: Publish latest to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: axenu/app-verapdf-worker
+        name: axenu/app-worker-verapdf
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         dockerfile: Dockerfile
-        tags: "latest"
