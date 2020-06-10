@@ -13,5 +13,5 @@ RUN curl -L http://downloads.verapdf.org/rel/verapdf-installer.zip -o /tmp/verap
 RUN unzip /tmp/verapdf-installer.zip -d /tmp/
 ADD ./auto-install-veraPDF.xml /tmp/auto-install-veraPDF.xml
 RUN ls /tmp
-RUN java -jar /tmp/verapdf-greenfield-1.14.8/verapdf-izpack-installer-1.14.8.jar /tmp/auto-install-veraPDF.xml
+RUN java -jar /tmp/verapdf-greenfield-1.16.1/verapdf-izpack-installer-1.16.1.jar /tmp/auto-install-veraPDF.xml
 ENV PATH="/opt/verapdf:${PATH}"
